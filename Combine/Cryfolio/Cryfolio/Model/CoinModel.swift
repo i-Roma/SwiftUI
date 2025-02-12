@@ -53,6 +53,8 @@ import Foundation
 
 import Foundation
 
+let coingeckoDataURL = "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=250&page=1&sparkline=true&price_change_percentage=24h"
+
 struct CoinModel: Identifiable, Codable {
     let id, symbol, name: String
     let image: String
@@ -60,7 +62,7 @@ struct CoinModel: Identifiable, Codable {
     let marketCap, marketCapRank, fullyDilutedValuation: Double?
     let totalVolume, high24H, low24H: Double?
     let priceChange24H: Double?
-    let priceChangePercentage24H: Double // ?
+    let priceChangePercentage24H: Double?
     let marketCapChange24H: Double?
     let marketCapChangePercentage24H: Double?
     let circulatingSupply, totalSupply, maxSupply, ath: Double?
@@ -72,6 +74,10 @@ struct CoinModel: Identifiable, Codable {
     let sparklineIn7D: SparklineIn7D?
     let priceChangePercentage24HInCurrency: Double?
     let currentHoldings: Double?
+    
+    var _priceChangePercentage24H: Double {
+        priceChangePercentage24H ?? 0
+    }
     
     enum CodingKeys: String, CodingKey {
         case id, symbol, name, image

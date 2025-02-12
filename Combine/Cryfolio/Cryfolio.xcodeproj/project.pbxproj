@@ -21,6 +21,7 @@
 		14C1D7F42D594AE200995162 /* StatisticModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C1D7F32D594AE200995162 /* StatisticModel.swift */; };
 		14C1D7F82D59516D00995162 /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C1D7F72D59516D00995162 /* Double.swift */; };
 		14D9023E2D5CC744003131BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14D9023D2D5CC744003131BD /* Assets.xcassets */; };
+		14D902412D5CCB94003131BD /* CoinDataServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D902402D5CCB94003131BD /* CoinDataServices.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		14C1D7F32D594AE200995162 /* StatisticModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatisticModel.swift; sourceTree = "<group>"; };
 		14C1D7F72D59516D00995162 /* Double.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
 		14D9023D2D5CC744003131BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		14D902402D5CCB94003131BD /* CoinDataServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDataServices.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,9 +76,11 @@
 				14C1D7CB2D592DD200995162 /* CryfolioApp.swift */,
 				14C1D7CD2D592DD200995162 /* ContentView.swift */,
 				14D9023D2D5CC744003131BD /* Assets.xcassets */,
-				14C1D7DE2D59324400995162 /* Core */,
-				14C1D7DB2D592F1400995162 /* Extensions */,
 				14C1D7EC2D5947E600995162 /* Model */,
+				14D9023F2D5CCB6D003131BD /* Services */,
+				14C1D7DF2D59325600995162 /* Home */,
+				14C1D7DE2D59324400995162 /* ReusableUI */,
+				14C1D7DB2D592F1400995162 /* Extensions */,
 				14C1D7D12D592DD600995162 /* Preview Content */,
 			);
 			path = Cryfolio;
@@ -99,13 +103,12 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		14C1D7DE2D59324400995162 /* Core */ = {
+		14C1D7DE2D59324400995162 /* ReusableUI */ = {
 			isa = PBXGroup;
 			children = (
 				14C1D7E42D5933FC00995162 /* Components */,
-				14C1D7DF2D59325600995162 /* Home */,
 			);
-			path = Core;
+			path = ReusableUI;
 			sourceTree = "<group>";
 		};
 		14C1D7DF2D59325600995162 /* Home */ = {
@@ -159,6 +162,14 @@
 				14C1D7ED2D59480100995162 /* CoinModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		14D9023F2D5CCB6D003131BD /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				14D902402D5CCB94003131BD /* CoinDataServices.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,6 +254,7 @@
 				14C1D7DD2D592F2800995162 /* Color.swift in Sources */,
 				14C1D7F82D59516D00995162 /* Double.swift in Sources */,
 				14C1D7E92D593D3900995162 /* CircleButtonAnimationView.swift in Sources */,
+				14D902412D5CCB94003131BD /* CoinDataServices.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
