@@ -11,7 +11,6 @@
 		14C1D7CC2D592DD200995162 /* CryfolioApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C1D7CB2D592DD200995162 /* CryfolioApp.swift */; };
 		14C1D7CE2D592DD200995162 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C1D7CD2D592DD200995162 /* ContentView.swift */; };
 		14C1D7D32D592DD600995162 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14C1D7D22D592DD600995162 /* Preview Assets.xcassets */; };
-		14C1D7DA2D592E6A00995162 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14C1D7D92D592E6900995162 /* Assets.xcassets */; };
 		14C1D7DD2D592F2800995162 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C1D7DC2D592F2800995162 /* Color.swift */; };
 		14C1D7E32D59328000995162 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C1D7E22D59328000995162 /* HomeView.swift */; };
 		14C1D7E72D59341800995162 /* CircleButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C1D7E62D59341800995162 /* CircleButtonView.swift */; };
@@ -21,6 +20,7 @@
 		14C1D7F02D5949C000995162 /* CoinRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C1D7EF2D5949BF00995162 /* CoinRowView.swift */; };
 		14C1D7F42D594AE200995162 /* StatisticModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C1D7F32D594AE200995162 /* StatisticModel.swift */; };
 		14C1D7F82D59516D00995162 /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C1D7F72D59516D00995162 /* Double.swift */; };
+		14D9023E2D5CC744003131BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14D9023D2D5CC744003131BD /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +29,6 @@
 		14C1D7CB2D592DD200995162 /* CryfolioApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryfolioApp.swift; sourceTree = "<group>"; };
 		14C1D7CD2D592DD200995162 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		14C1D7D22D592DD600995162 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		14C1D7D92D592E6900995162 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../Resources/Assets.xcassets; sourceTree = "<group>"; };
 		14C1D7DC2D592F2800995162 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		14C1D7E22D59328000995162 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		14C1D7E62D59341800995162 /* CircleButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButtonView.swift; sourceTree = "<group>"; };
@@ -39,6 +38,7 @@
 		14C1D7EF2D5949BF00995162 /* CoinRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinRowView.swift; sourceTree = "<group>"; };
 		14C1D7F32D594AE200995162 /* StatisticModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatisticModel.swift; sourceTree = "<group>"; };
 		14C1D7F72D59516D00995162 /* Double.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
+		14D9023D2D5CC744003131BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +73,7 @@
 			children = (
 				14C1D7CB2D592DD200995162 /* CryfolioApp.swift */,
 				14C1D7CD2D592DD200995162 /* ContentView.swift */,
-				14C1D7D92D592E6900995162 /* Assets.xcassets */,
+				14D9023D2D5CC744003131BD /* Assets.xcassets */,
 				14C1D7DE2D59324400995162 /* Core */,
 				14C1D7DB2D592F1400995162 /* Extensions */,
 				14C1D7EC2D5947E600995162 /* Model */,
@@ -220,7 +220,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				14C1D7D32D592DD600995162 /* Preview Assets.xcassets in Resources */,
-				14C1D7DA2D592E6A00995162 /* Assets.xcassets in Resources */,
+				14D9023E2D5CC744003131BD /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
