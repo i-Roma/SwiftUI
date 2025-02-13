@@ -23,7 +23,7 @@ class HomeViewModel: ObservableObject {
     func addSubscriber() {
         coinDataServices.$allCoins
             .sink { [weak self] allCoins in
-                guard let _self = self else { return print(#file, #line) }
+                guard let _self = self else { return print(#file, #function, #line) }
                 _self.allCoins = allCoins
             }
             .store(in: &subscription)

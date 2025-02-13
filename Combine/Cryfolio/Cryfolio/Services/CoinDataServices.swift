@@ -23,7 +23,7 @@ class CoinDataServices {
         coinSubscription = NetworkingManager.download(url: url)
             .decode(type: [CoinModel].self, decoder: JSONDecoder())
             .sink(receiveCompletion: NetworkingManager.handle, receiveValue: { [weak self] response in
-                guard let _self = self else { return print(#file, #line) }
+                guard let _self = self else { return print(#file, #function, #line) }
                 
                 _self.allCoins = response
                 _self.coinSubscription?.cancel()

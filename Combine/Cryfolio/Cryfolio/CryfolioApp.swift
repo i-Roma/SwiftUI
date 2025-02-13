@@ -11,7 +11,7 @@ import SwiftUI
 struct CryfolioApp: App {
     
     @StateObject private var homeViewModel = HomeViewModel()
-    
+        
     var body: some Scene {
         WindowGroup {
             NavigationView {

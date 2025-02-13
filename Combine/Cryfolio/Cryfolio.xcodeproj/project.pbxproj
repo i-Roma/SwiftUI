@@ -11,6 +11,7 @@
 		149760092D5E5E6100A65CE3 /* CoinImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149760082D5E5E6100A65CE3 /* CoinImageView.swift */; };
 		1497600B2D5E607500A65CE3 /* CoinImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1497600A2D5E607500A65CE3 /* CoinImageViewModel.swift */; };
 		1497600D2D5E60F600A65CE3 /* CoinImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1497600C2D5E60F600A65CE3 /* CoinImageService.swift */; };
+		149760102D5E6C6100A65CE3 /* LocalFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1497600F2D5E6C6100A65CE3 /* LocalFileManager.swift */; };
 		14C1D7CC2D592DD200995162 /* CryfolioApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C1D7CB2D592DD200995162 /* CryfolioApp.swift */; };
 		14C1D7CE2D592DD200995162 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C1D7CD2D592DD200995162 /* ContentView.swift */; };
 		14C1D7D32D592DD600995162 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14C1D7D22D592DD600995162 /* Preview Assets.xcassets */; };
@@ -33,6 +34,7 @@
 		149760082D5E5E6100A65CE3 /* CoinImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinImageView.swift; sourceTree = "<group>"; };
 		1497600A2D5E607500A65CE3 /* CoinImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinImageViewModel.swift; sourceTree = "<group>"; };
 		1497600C2D5E60F600A65CE3 /* CoinImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinImageService.swift; sourceTree = "<group>"; };
+		1497600F2D5E6C6100A65CE3 /* LocalFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalFileManager.swift; sourceTree = "<group>"; };
 		14C1D7C82D592DD200995162 /* Cryfolio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cryfolio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14C1D7CB2D592DD200995162 /* CryfolioApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryfolioApp.swift; sourceTree = "<group>"; };
 		14C1D7CD2D592DD200995162 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -71,6 +73,14 @@
 			path = CoinImage;
 			sourceTree = "<group>";
 		};
+		1497600E2D5E6C4B00A65CE3 /* LocalFileManager */ = {
+			isa = PBXGroup;
+			children = (
+				1497600F2D5E6C6100A65CE3 /* LocalFileManager.swift */,
+			);
+			path = LocalFileManager;
+			sourceTree = "<group>";
+		};
 		14C1D7BF2D592DD200995162 = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +109,7 @@
 				14C1D7DB2D592F1400995162 /* Extensions */,
 				14D902422D5E4D22003131BD /* Networking */,
 				14D9023F2D5CCB6D003131BD /* Services */,
+				1497600E2D5E6C4B00A65CE3 /* LocalFileManager */,
 				14C1D7D12D592DD600995162 /* Preview Content */,
 			);
 			path = Cryfolio;
@@ -285,6 +296,7 @@
 				1497600B2D5E607500A65CE3 /* CoinImageViewModel.swift in Sources */,
 				149760092D5E5E6100A65CE3 /* CoinImageView.swift in Sources */,
 				14C1D7E92D593D3900995162 /* CircleButtonAnimationView.swift in Sources */,
+				149760102D5E6C6100A65CE3 /* LocalFileManager.swift in Sources */,
 				14D902412D5CCB94003131BD /* CoinDataServices.swift in Sources */,
 				14D902442D5E4D4A003131BD /* NetworkingManager.swift in Sources */,
 			);

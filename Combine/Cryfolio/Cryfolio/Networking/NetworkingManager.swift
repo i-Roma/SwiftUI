@@ -35,7 +35,7 @@ class NetworkingManager {
         guard let response = output.response as? HTTPURLResponse,
               response.statusCode >= 200 && response.statusCode <= 300
         else {
-            print(#file, #line)
+            print(#file, #function, #line)
             throw NetworkingError.badURLResponse(url: url)
         }
         
@@ -45,7 +45,7 @@ class NetworkingManager {
     static func handle(completion: Subscribers.Completion<Error>) {
         switch completion {
         case .finished: break
-        case .failure(let error): print(#file, #line, error.localizedDescription)
+        case .failure(let error): print(#file, #function, #line, error.localizedDescription)
         }
     }
 }
