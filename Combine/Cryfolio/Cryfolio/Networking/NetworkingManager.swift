@@ -45,8 +45,7 @@ class NetworkingManager {
     static func handle(completion: Subscribers.Completion<Error>) {
         switch completion {
         case .finished: break
-        case .failure(let error):
-            print(#file, #line, error.localizedDescription)
+        case .failure(let error): print(#file, #line, error.localizedDescription)
         }
     }
 }

@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		14255C662D5A694D0069CEA1 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14255C652D5A694D0069CEA1 /* HomeViewModel.swift */; };
+		149760092D5E5E6100A65CE3 /* CoinImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149760082D5E5E6100A65CE3 /* CoinImageView.swift */; };
+		1497600B2D5E607500A65CE3 /* CoinImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1497600A2D5E607500A65CE3 /* CoinImageViewModel.swift */; };
+		1497600D2D5E60F600A65CE3 /* CoinImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1497600C2D5E60F600A65CE3 /* CoinImageService.swift */; };
 		14C1D7CC2D592DD200995162 /* CryfolioApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C1D7CB2D592DD200995162 /* CryfolioApp.swift */; };
 		14C1D7CE2D592DD200995162 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C1D7CD2D592DD200995162 /* ContentView.swift */; };
 		14C1D7D32D592DD600995162 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14C1D7D22D592DD600995162 /* Preview Assets.xcassets */; };
@@ -27,6 +30,9 @@
 
 /* Begin PBXFileReference section */
 		14255C652D5A694D0069CEA1 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		149760082D5E5E6100A65CE3 /* CoinImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinImageView.swift; sourceTree = "<group>"; };
+		1497600A2D5E607500A65CE3 /* CoinImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinImageViewModel.swift; sourceTree = "<group>"; };
+		1497600C2D5E60F600A65CE3 /* CoinImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinImageService.swift; sourceTree = "<group>"; };
 		14C1D7C82D592DD200995162 /* Cryfolio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cryfolio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14C1D7CB2D592DD200995162 /* CryfolioApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryfolioApp.swift; sourceTree = "<group>"; };
 		14C1D7CD2D592DD200995162 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -56,6 +62,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		149760072D5E5E4C00A65CE3 /* CoinImage */ = {
+			isa = PBXGroup;
+			children = (
+				1497600A2D5E607500A65CE3 /* CoinImageViewModel.swift */,
+				149760082D5E5E6100A65CE3 /* CoinImageView.swift */,
+			);
+			path = CoinImage;
+			sourceTree = "<group>";
+		};
 		14C1D7BF2D592DD200995162 = {
 			isa = PBXGroup;
 			children = (
@@ -75,15 +90,15 @@
 		14C1D7CA2D592DD200995162 /* Cryfolio */ = {
 			isa = PBXGroup;
 			children = (
-				14D902422D5E4D22003131BD /* Utilities */,
 				14C1D7CB2D592DD200995162 /* CryfolioApp.swift */,
 				14C1D7CD2D592DD200995162 /* ContentView.swift */,
 				14D9023D2D5CC744003131BD /* Assets.xcassets */,
-				14C1D7EC2D5947E600995162 /* Model */,
-				14D9023F2D5CCB6D003131BD /* Services */,
-				14C1D7DF2D59325600995162 /* Home */,
 				14C1D7DE2D59324400995162 /* ReusableUI */,
+				14C1D7EC2D5947E600995162 /* Model */,
+				14C1D7DF2D59325600995162 /* Home */,
 				14C1D7DB2D592F1400995162 /* Extensions */,
+				14D902422D5E4D22003131BD /* Networking */,
+				14D9023F2D5CCB6D003131BD /* Services */,
 				14C1D7D12D592DD600995162 /* Preview Content */,
 			);
 			path = Cryfolio;
@@ -109,6 +124,7 @@
 		14C1D7DE2D59324400995162 /* ReusableUI */ = {
 			isa = PBXGroup;
 			children = (
+				149760072D5E5E4C00A65CE3 /* CoinImage */,
 				14C1D7E42D5933FC00995162 /* Components */,
 			);
 			path = ReusableUI;
@@ -171,16 +187,17 @@
 			isa = PBXGroup;
 			children = (
 				14D902402D5CCB94003131BD /* CoinDataServices.swift */,
+				1497600C2D5E60F600A65CE3 /* CoinImageService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
 		};
-		14D902422D5E4D22003131BD /* Utilities */ = {
+		14D902422D5E4D22003131BD /* Networking */ = {
 			isa = PBXGroup;
 			children = (
 				14D902432D5E4D4A003131BD /* NetworkingManager.swift */,
 			);
-			path = Utilities;
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,10 +277,13 @@
 				14C1D7E32D59328000995162 /* HomeView.swift in Sources */,
 				14C1D7CC2D592DD200995162 /* CryfolioApp.swift in Sources */,
 				14C1D7EE2D59480100995162 /* CoinModel.swift in Sources */,
+				1497600D2D5E60F600A65CE3 /* CoinImageService.swift in Sources */,
 				14255C662D5A694D0069CEA1 /* HomeViewModel.swift in Sources */,
 				14C1D7E72D59341800995162 /* CircleButtonView.swift in Sources */,
 				14C1D7DD2D592F2800995162 /* Color.swift in Sources */,
 				14C1D7F82D59516D00995162 /* Double.swift in Sources */,
+				1497600B2D5E607500A65CE3 /* CoinImageViewModel.swift in Sources */,
+				149760092D5E5E6100A65CE3 /* CoinImageView.swift in Sources */,
 				14C1D7E92D593D3900995162 /* CircleButtonAnimationView.swift in Sources */,
 				14D902412D5CCB94003131BD /* CoinDataServices.swift in Sources */,
 				14D902442D5E4D4A003131BD /* NetworkingManager.swift in Sources */,
