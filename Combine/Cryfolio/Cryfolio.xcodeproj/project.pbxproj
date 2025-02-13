@@ -22,6 +22,7 @@
 		14C1D7F82D59516D00995162 /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C1D7F72D59516D00995162 /* Double.swift */; };
 		14D9023E2D5CC744003131BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14D9023D2D5CC744003131BD /* Assets.xcassets */; };
 		14D902412D5CCB94003131BD /* CoinDataServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D902402D5CCB94003131BD /* CoinDataServices.swift */; };
+		14D902442D5E4D4A003131BD /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D902432D5E4D4A003131BD /* NetworkingManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		14C1D7F72D59516D00995162 /* Double.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
 		14D9023D2D5CC744003131BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		14D902402D5CCB94003131BD /* CoinDataServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDataServices.swift; sourceTree = "<group>"; };
+		14D902432D5E4D4A003131BD /* NetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 		14C1D7CA2D592DD200995162 /* Cryfolio */ = {
 			isa = PBXGroup;
 			children = (
+				14D902422D5E4D22003131BD /* Utilities */,
 				14C1D7CB2D592DD200995162 /* CryfolioApp.swift */,
 				14C1D7CD2D592DD200995162 /* ContentView.swift */,
 				14D9023D2D5CC744003131BD /* Assets.xcassets */,
@@ -172,6 +175,14 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		14D902422D5E4D22003131BD /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				14D902432D5E4D4A003131BD /* NetworkingManager.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -255,6 +266,7 @@
 				14C1D7F82D59516D00995162 /* Double.swift in Sources */,
 				14C1D7E92D593D3900995162 /* CircleButtonAnimationView.swift in Sources */,
 				14D902412D5CCB94003131BD /* CoinDataServices.swift in Sources */,
+				14D902442D5E4D4A003131BD /* NetworkingManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,6 +408,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -425,6 +438,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
