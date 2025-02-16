@@ -18,17 +18,16 @@ struct HomeView: View {
             
             VStack {
                 HomeViewHeader(showPortfolio: $showPortfolio)
-                
+                HomeStatistisView(showPortfolio: $showPortfolio)
                 SearchBarView(searchText: $vm.searchText)
-
-                columnTitles
+                ColumnTitles
                 
                 if !showPortfolio {
-                    allCoinsList.transition(.move(edge: .leading))
+                    AllCoinsList.transition(.move(edge: .leading))
                 }
                 
                 if showPortfolio {
-                    portfoloiCoinsList.transition(.move(edge: .trailing))
+                    PortfoloiCoinsList.transition(.move(edge: .trailing))
                 }
                 
                 Spacer(minLength: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/)
@@ -41,7 +40,7 @@ struct HomeView: View {
 
 extension HomeView {
     
-    private var columnTitles: some View {
+    private var ColumnTitles: some View {
         HStack {
             Text("Coins")
             Spacer()
@@ -54,7 +53,7 @@ extension HomeView {
         .foregroundColor(Color.theme.secondaryText )
     }
     
-    private var allCoinsList: some View {
+    private var AllCoinsList: some View {
         List {
             ForEach(vm.allCoins) { coin in
                 CoinRowView(coin: coin, showHoldingsColoum: false)
@@ -71,7 +70,7 @@ extension HomeView {
         .listStyle(PlainListStyle())
     }
     
-    private var portfoloiCoinsList: some View {
+    private var PortfoloiCoinsList: some View {
         List {
             ForEach(vm.portfolioCoins) { coin in
                 CoinRowView(coin: coin, showHoldingsColoum: true)
