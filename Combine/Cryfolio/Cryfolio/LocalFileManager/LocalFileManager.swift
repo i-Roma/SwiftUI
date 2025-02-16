@@ -5,7 +5,7 @@
 //  Created by Roman Romanenko on 13.02.2025.
 //
 
-// video: https://www.youtube.com/watch?v=Z9yWdChUDlo&list=PLwvDm4Vfkdphbc3bgy_LpLRQ9DDfFGcFu&index=10
+// source: https://www.youtube.com/watch?v=Z9yWdChUDlo&list=PLwvDm4Vfkdphbc3bgy_LpLRQ9DDfFGcFu&index=10
 
 import Foundation
 import SwiftUI

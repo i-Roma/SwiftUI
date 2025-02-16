@@ -16,7 +16,7 @@ class NetworkingManager {
         
         var localizedDescription: String {
             // error description doesn't work
-            // video: https://www.youtube.com/watch?v=pp5-ASYnY0o&list=PLwvDm4Vfkdphbc3bgy_LpLRQ9DDfFGcFu&index=8&pp=iAQB
+            // source: https://www.youtube.com/watch?v=pp5-ASYnY0o&list=PLwvDm4Vfkdphbc3bgy_LpLRQ9DDfFGcFu&index=8&pp=iAQB
             switch self {
             case .badURLResponse(let url): return "⛔️ Bad response from URL: \(url)"
             case .unknown: return "🛟 Unknown error occured"

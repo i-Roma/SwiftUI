@@ -9,7 +9,7 @@ import SwiftUI
 
 struct HomeView: View {
     
-    @StateObject private var homeViewModel = HomeViewModel()
+    @StateObject private var vm = HomeViewModel()
     @State private var showPortfolio = false
     
     var body: some View {
@@ -18,6 +18,8 @@ struct HomeView: View {
             
             VStack {
                 HomeViewHeader(showPortfolio: $showPortfolio)
+                
+                SearchBarView(searchText: $vm.searchText)
 
                 columnTitles
                 
@@ -54,7 +56,7 @@ extension HomeView {
     
     private var allCoinsList: some View {
         List {
-            ForEach(homeViewModel.allCoins) { coin in
+            ForEach(vm.allCoins) { coin in
                 CoinRowView(coin: coin, showHoldingsColoum: false)
                     .listRowInsets(
                         .init(
@@ -71,7 +73,7 @@ extension HomeView {
     
     private var portfoloiCoinsList: some View {
         List {
-            ForEach(homeViewModel.portfolioCoins) { coin in
+            ForEach(vm.portfolioCoins) { coin in
                 CoinRowView(coin: coin, showHoldingsColoum: true)
                     .listRowInsets(
                         .init(
