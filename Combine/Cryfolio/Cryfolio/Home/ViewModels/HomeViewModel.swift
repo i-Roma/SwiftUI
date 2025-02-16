@@ -15,19 +15,44 @@ class HomeViewModel: ObservableObject {
     @Published var searchText = ""
     
     private let coinDataServices = CoinDataServices()
-    private var subscription = Set<AnyCancellable>()
+    private var subscriptions = Set<AnyCancellable>()
     
     init() {
-        addSubscriber()
+        addSubscribers()
     }
     
-    func addSubscriber() {
-        coinDataServices.$allCoins
+    func addSubscribers() {
+        
+        // Not needed anymore, because subscription below
+        // is updates coinDataServices.$allCoins too
+        
+        /*coinDataServices.$allCoins
             .sink { [weak self] allCoins in
                 guard let _self = self else { return print(#file, #function, #line) }
                 _self.allCoins = allCoins
             }
-            .store(in: &subscription)
+            .store(in: &subscriptions)*/
+        
+        $searchText
+            .combineLatest(coinDataServices.$allCoins)
+            .debounce(for: .seconds(0.3), scheduler: DispatchQueue.main)
+            .map(filterCoins)
+            .sink { [weak self] returnedCoins in
+                self?.allCoins = returnedCoins
+            }
+            .store(in: &subscriptions)
+    }
+    
+    private func filterCoins(text: String, coins: [CoinModel]) -> [CoinModel] {
+        guard !text.isEmpty else { return coins }
+        
+        let lowercasedText = text.lowercased()
+        
+        return coins.filter { coin in
+            coin.name.lowercased().contains(lowercasedText) ||
+            coin.symbol.lowercased().contains(lowercasedText) ||
+            coin.id.lowercased().contains(lowercasedText)
+        }
     }
 }
 
